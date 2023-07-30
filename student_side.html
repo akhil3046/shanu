@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Student</title>
+    <link rel="stylesheet" href="student_style.css" />
+    <script defer src="student_script.js"></script>
+  </head>
+  <body>
+    <form onSubmit="return validateRegNumber()" id="Std_query">
+      <h2>Submit Your Problem or Query</h2>
+      <!-- <label for="name"></label> -->
+      <input type="text" id="name" placeholder="Name" /><br />
+
+      <!-- <label for="regNum">Registration number</label> -->
+      <input type="text" id="regNumber" placeholder="Roll number" /><br />
+
+      <!-- <label for="Faculty">Faculty approached</label> -->
+      <input
+        type="text"
+        id="Faculty"
+        placeholder="Faculty approached"
+        required
+      /><br />
+
+      <!-- <label for="purpose">Purpose</label> -->
+      <input type="text" id="purpose" placeholder="Purpose" required /><br />
+
+      <!-- <label for="status">Status</label> -->
+      <select id="status">
+        <option value="status" id="status1">Status</option>
+        <option value="solved">Solved</option>
+        <option value="not solved">Not Solved</option></select
+      ><br />
+
+      <!-- <label for="description">Brief Description</label> -->
+      <textarea
+        rows="4"
+        id="description"
+        placeholder="descirbe your issue"
+      ></textarea
+      ><br />
+
+      <button type="submit" id="submit">Submit</button>
+      <p id="error-message"></p>
+    </form>
+  </body>
+</html>
